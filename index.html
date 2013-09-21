@@ -9,8 +9,52 @@
 	<body>
         <div class="uk-container uk-container-center">
             <h1 class="uk-text-center">
-                123
+                Welcome to UiKit Demonstration
             </h1>
+
+            <!-- Navigation bar -->
+            <nav class="uk-navbar">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a href="#">
+                            <i class="uk-icon-home"></i>
+                             Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="page2.html">Page 2</a>
+                    </li>
+                    <li class="uk-parent" data-uk-dropdown="">
+                        <a href="#">
+                            Just Example 
+                            <i class="uk-icon-caret-down"></i>
+                        </a>
+                        <div class="uk-dropdown uk-dropdown-navbar" style="">
+                            <ul class="uk-nav uk-nav-navbar">
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another item</a>
+                                </li>
+                                <li class="uk-nav-header">Header</li>
+                                <li>
+                                    <a href="#">Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another item</a>
+                                </li>
+                                <li class="uk-nav-divider"></li>
+                                <li>
+                                    <a href="#">Separated item</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <br />
+
             <div class="uk-grid" data-uk-grid-match="">
                 <div class="uk-width-1-2">
                     <div class="uk-panel uk-panel-box">
@@ -24,16 +68,19 @@
 	                        <small>Source</small>
                         </blockquote>
                     </div>
+
                     <div class="uk-panel uk-panel-box">
                         <div class="uk-panel-badge uk-badge uk-badge-danger">Stop!</div> 
                         <h3 class="uk-panel-title">Stop Title</h3>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
+
                     <div class="uk-panel uk-panel-box uk-panel-header uk-panel-box-secondary">
                         <div class="uk-panel-badge uk-badge uk-badge-notification uk-badge-warning">Be careful</div>
                         <h3 class="uk-panel-title">Warning Title</h3>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
+
                     <div class="uk-panel uk-panel-box uk-panel-box-primary">
                         <span class="uk-panel-badge uk-badge uk-badge-success">Go</span> 
                         <h3 class="uk-panel-title">Go Title</h3>
@@ -53,6 +100,7 @@
 	                        </li>
                         </ul>
                     </div>
+
                     <div class="uk-panel uk-panel-divider">
                         <h3 class="uk-panel-title"><i class="uk-icon-home uk-icon-large"> </i>Ordered list</h3>
                         <ol>
@@ -105,9 +153,17 @@
 		                        </tr>
 	                        </tbody>
                         </table>
+                        <br />
+                        <a class="uk-link-muted" href="">This is a link!</a>
+                        <br />
+                        <div class="uk-visible-hover-inline uk-margin">
+                            Hover me...
+	                        <em class="uk-hidden">Bazinga!</em>
+                        </div>
                     </div>
                 </div>
                 <p></p> <!--why there is no space before this article panel by default? -->
+
                 <div class="uk-width-1-1">
                     <div class="uk-panel uk-panel-box uk-panel-box-secondary">
                         <article class="uk-article">
