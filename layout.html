@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/uikit.gradient.min.css" />
+        <!-- This row is for GitHub-->
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+        
+        <!-- This row is for VS
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+         -->
+		<script src="js/uikit.min.js"></script>
+	</head>
+	<body>
+        <div class="uk-container uk-container-center">
+            <h1 class="uk-text-center">
+                Welcome to UiKit Demonstration
+            </h1>
+
+            <!-- Navigation bar -->
+            <nav class="uk-navbar">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a href="#">
+                            <i class="uk-icon-home"></i>
+                             Layout
+                        </a>
+                    </li>
+                    <li>
+                        <a href="navigation.html">Navigation</a>
+                    </li>
+                    <li>
+                        <a href="elements.html">Elements</a>
+                    </li>
+                    <li>
+                        <a href="common.html">Common</a>
+                    </li>
+                </ul>
+            </nav>
+            <br />
+
+            <div class="uk-grid" data-uk-grid-match="">
+                <div class="uk-width-1-2">
+                    <div class="uk-panel uk-panel-box">
+                        <h4><i class="uk-icon-refresh uk-icon-spin"> </i> Refreshing...</h4>
+                        <h4><i class="uk-icon-spinner uk-icon-spin"> </i> Loading...</h4>
+                        <p><a>hypertext</a></p>
+                        <p><em>emphasize</em></p>
+                        <p><code>my code goes here()</code></p>
+                        <blockquote>
+                            <p><i class="uk-icon-quote-left uk-icon-small align-left"></i>The &lt;blockquote&gt; element defines a long quotation which also creates a new block by inserting white space before and after the blockquote element.</p>
+                            <small>Source</small>
+                        </blockquote>
+                    </div>
+
+                    <div class="uk-panel uk-panel-divider">
+                        <h3 class="uk-panel-title"><i class="uk-icon-lightbulb uk-icon-medium"> </i>Unordered list</h3>
+                        <ul>
+	                        <li>item 1</li>
+	                        <li>item 2
+		                        <ul>
+			                        <li>item 3</li>
+		                        </ul>
+	                        </li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="uk-panel uk-panel-divider">
+                        <h3 class="uk-panel-title"><i class="uk-icon-home uk-icon-large"> </i>Ordered list</h3>
+                        <ol>
+	                        <li>item 1</li>
+	                        <li>item 2
+		                        <ol>
+			                        <li>item 3</li>
+		                        </ol>
+	                        </li>
+                            <li>Item 3</li>
+                        </ol>
+                    </div>
+                </div>
+            
+                
+                <div class="uk-width-1-2">
+                    <div class="uk-panel uk-panel-box">
+                        <div class="uk-panel-badge uk-badge uk-badge-danger">Stop!</div> 
+                        <h3 class="uk-panel-title">Stop Title</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+
+                    <div class="uk-panel uk-panel-box uk-panel-header uk-panel-box-secondary">
+                        <div class="uk-panel-badge uk-badge uk-badge-notification uk-badge-warning">Be careful</div>
+                        <h3 class="uk-panel-title">Warning Title</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+
+                    <div class="uk-panel uk-panel-box uk-panel-box-primary">
+                        <span class="uk-panel-badge uk-badge uk-badge-success">Go</span> 
+                        <h3 class="uk-panel-title">Go Title</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <div class="uk-panel uk-panel-box uk-panel-space">
+                        <p><a class="uk-link-muted" href="">This is a link!</a></p>
+                        <div class="uk-visible-hover-inline uk-margin">
+                            Hover me...
+	                        <em class="uk-hidden">Bazinga!</em>
+                        </div>
+                        <p><a href="#"><i class="uk-icon-external-link"></i> An icon in a link</a></p>
+						<p><a href="#" class="uk-button"><i class="uk-icon-envelope-alt"></i> A button with an icon</a></p>
+                        <p>
+                            <a href="#" class="uk-icon-button uk-icon-github"></a>
+							<a href="#" class="uk-icon-button uk-icon-twitter"></a>
+							<a href="#" class="uk-icon-button uk-icon-dribbble"></a>
+							<a href="#" class="uk-icon-button uk-icon-html5"></a>
+                        </p>
+
+                        <p>Close icons
+                            <a href="#" class="uk-close"></a>
+                            <a href="#" class="uk-close uk-close-alt"></a>
+                            <button class="uk-button" data-uk-modal="{target:'#modal'}">Click me</button>
+                        </p>
+
+                        <div id="modal" class="uk-modal">
+                            <div class="uk-modal-dialog uk-modal-dialog-frameless">
+                                <button type="button" class="uk-modal-close uk-close uk-close-alt"></button>
+                                <img src="http://assets.nydailynews.com/polopoly_fs/1.1269592.1361443092!/img/httpImage/image.jpg_gen/derivatives/landscape_635/daisy-kitten-4.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="uk-alert uk-alert-success" data-uk-alert="">
+                            <a href="#" class="uk-alert-close uk-close"></a>
+                            <p>This is a alert using an a element as close button.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-grid" data-uk-grid-match="">
+                <div class="uk-width-1-1">
+                    <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                        <article class="uk-article">
+                            <h1 class="uk-article-title">Article Title</h1>
+                            <p class="uk-article-meta">Written by Me on 20 Sep 2013</p>
+                            <p class="uk-article-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <hr class="uk-article-divider">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#">Read more</a>
+                            <p></p>
+                        </article>
+
+                        <!-- comment -->
+                        <div class="uk-comment-list">
+                            <li>
+                                <article class="uk-comment">
+                                    <header class="uk-comment-header">
+                                        <img class="uk-comment-avatar" alt="" src="http://my.opera.com/community/users/avatar.pl/15164">
+                                        <h4 class="uk-comment-title">Author</h4>
+                                        <div class="uk-comment-meta">Written by Super User on 12 April 2012. Posted in Blog</div>
+                                    </header>
+                                    <div class="uk-comment-body">
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                    </div>
+                                </article>
+                                <ul>
+                                    <li>
+                                        <article class="uk-comment">
+                                            <header class="uk-comment-header">
+                                                <img class="uk-comment-avatar" alt="" src="http://avatar.img.digart.pl/data/avatar/k/106804">
+                                                <h4 class="uk-comment-title">Author</h4>
+                                                <div class="uk-comment-meta">Written by Super User on 12 April 2012. Posted in Blog</div>
+                                            </header>
+                                            <div class="uk-comment-body">
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- container -->
+	</body>
+</html>
