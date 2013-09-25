@@ -11,6 +11,7 @@
          -->
 		<script src="js/uikit.min.js"></script>
 	</head>
+
 	<body>
         <div class="uk-container uk-container-center">
             <h1 class="uk-text-center">
@@ -60,18 +61,22 @@
                     </form>
                 </div>
             </nav>
-            <br />
 
             <!-- Search nav -->
-            <form class="uk-search" data-uk-search="{source:'PATH/TO/RESULTS.json'}">
-                <input class="uk-search-field" type="search" placeholder="search...">
-                <button class="uk-search-close" type="reset"></button>
-            </form>
-
             <div class="uk-grid" data-uk-grid-match="">
+                <div class="uk-width-medium-1-1 uk-margin-top">
+                        <form class="uk-search" data-uk-search="{source:'PATH/TO/RESULTS.json'}">
+                            <input class="uk-search-field" type="search" placeholder="search...">
+                            <button class="uk-search-close" type="reset"></button>
+                        </form>
+                </div>
+            </div>
 
-                <!-- Accordion -->
+            <!-- Accordion -->
+            <h2>Accordion</h2>
+            <div class="uk-grid" data-uk-grid-match="">
                 <div class="uk-width-medium-1-2">
+                    <h3>One open list at a time</h3>
                     <p><code>data-uk-nav</code></p>
                     <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-width-medium-2-3" data-uk-nav="">
                         <li class="uk-active"><a href="#">Active</a></li>
@@ -101,6 +106,7 @@
                 </div>
 
                 <div class="uk-width-medium-1-2">
+                    <h3>Multiple open lists at a time</h3>
                     <p><code>data-uk-nav="{multiple:true}"</code></p>
                     <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-width-medium-2-3" data-uk-nav="{multiple:true}">
                         <li class="uk-active"><a href="#">Active</a></li>
@@ -128,91 +134,91 @@
                         </li>
                     </ul>
                 </div>
-
             </div> <!-- end of accordion example gris -->
 
             <hr class="uk-article-divider">
 
             <div class="uk-grid">
-
-                <div class="uk-width-1-1">
+                <div class="uk-width-1-2">
                     <!-- Nav dropdown -->
-                    <div class="uk-button-dropdown" data-uk-dropdown="">
-                        <button class="uk-button" type="submit">
-                            Dropdown
-                            <i class="uk-icon-caret-down"></i>
-                        </button>
-                        <div class="uk-dropdown uk-dropdown-small" style="">
-                            <ul class="uk-nav uk-nav-dropdown">
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another item</a>
-                                </li>
-                                <li class="uk-nav-header">Header</li>
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Another item</a>
-                                </li>
-                                <li class="uk-nav-divider"></li>
-                                <li>
-                                    <a href="#">Separated item</a>
-                                </li>
-                            </ul>
+                    <h3>Navigation dropdown</h3>
+                    <div class="uk-margin">
+                        <div class="uk-button-dropdown" data-uk-dropdown="">
+                            <button class="uk-button" type="submit">
+                                Dropdown
+                                <i class="uk-icon-caret-down"></i>
+                            </button>
+                            <div class="uk-dropdown uk-dropdown-small" style="">
+                                <ul class="uk-nav uk-nav-dropdown">
+                                    <li>
+                                        <a href="#">Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another item</a>
+                                    </li>
+                                    <li class="uk-nav-header">Header</li>
+                                    <li>
+                                        <a href="#">Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Another item</a>
+                                    </li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li>
+                                        <a href="#">Separated item</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <p></p>
 
                     <!-- Nav off-canvas -->
-                    <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-1'}">Off-canvas</button>
+                    <h3>Navigation Off-Canvas</h3>
+                    <div class="uk-margin">
+                        <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-1'}">Off-canvas</button>
 
-                    <div id="offcanvas-1" class="uk-offcanvas">
+                        <div id="offcanvas-1" class="uk-offcanvas">
+                            <div class="uk-offcanvas-bar">
+                                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="">
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-active"><a href="#">Active</a></li>
+                                    <li class="uk-parent">
+                                        <a href="#">Parent</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="#">Sub item</a></li>
+                                            <li><a href="#">Sub item</a>
+                                                <ul>
+                                                    <li><a href="#">Sub item</a></li>
+                                                    <li><a href="#">Sub item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-parent">
+                                        <a href="#">Parent</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="#">Sub item</a></li>
+                                            <li><a href="#">Sub item</a></li>
+                                        </ul>
+                                    </li>
 
-                        <div class="uk-offcanvas-bar">
+                                    <li><a href="#">Item</a></li>
 
-                            <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
-                                <li><a href="#">Item</a></li>
-                                <li class="uk-active"><a href="#">Active</a></li>
-
-                                <li class="uk-parent">
-                                    <a href="#">Parent</a>
-                                    <ul class="uk-nav-sub">
-                                        <li><a href="#">Sub item</a></li>
-                                        <li><a href="#">Sub item</a>
-                                            <ul>
-                                                <li><a href="#">Sub item</a></li>
-                                                <li><a href="#">Sub item</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="uk-parent">
-                                    <a href="#">Parent</a>
-                                    <ul class="uk-nav-sub">
-                                        <li><a href="#">Sub item</a></li>
-                                        <li><a href="#">Sub item</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="#">Item</a></li>
-
-                                <li class="uk-nav-header">Header</li>
-                                <li class="uk-parent"><a href="#"><i class="uk-icon-star"></i>Parent</a></li>
-                                <li><a href="$"><i class="uk-icon-twitter"></i>Item</a></li>
-                                <li class="uk-nav-divider"></li>
-                                <li><a href="#"><i class="uk-icon-rss"></i>Item</a></li>
-                            </ul>
-
+                                    <li class="uk-nav-header">Header</li>
+                                    <li class="uk-parent"><a href="#"><i class="uk-icon-star"></i>Parent</a></li>
+                                    <li><a href="$"><i class="uk-icon-twitter"></i>Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#"><i class="uk-icon-rss"></i>Item</a></li>
+                                </ul>
+                            </div>
                         </div>
-
                     </div>
-                    <br />
+                </div>
 
-                    <!-- Subnav -->
+                <!-- Subnav -->
+                
+                <div class="uk-width-1-2">
+                    <h3>Subnav with dropdowns</h3>
                     <ul class="uk-subnav uk-subnav-pill">
                         <li class="uk-active">
                             <a href="#">Active</a>
@@ -251,72 +257,97 @@
                         </li>
                     </ul>
 
-                    <!-- vertical tabs -->
-                    <div class="uk-grid" data-uk-grid-match="">
-                        <div class="uk-width-medium-1-2">
-                            <ul class="uk-tab uk-tab-left uk-width-medium-1-2" data-uk-tab="">
-                                <li class="uk-active">
-                                    <a href="#">Active</a>
-                                </li>
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
-                                <li class="uk-tab-responsive uk-active">
-                                    <a href="javascript:void(0);">Active</a>
-                                    <div class="uk-dropdown uk-dropdown-small">
-                                        <ul class="uk-nav uk-nav-dropdown">
-                                            <li>
-                                                <a href="javascript:void(0);">Active</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">Item</a>
-                                            </li>
-                                        </ul>
-                                        <div></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="uk-width-medium-1-2">
-                            <ul class="uk-tab uk-tab-right uk-width-medium-1-2" data-uk-tab="">
-                                <li class="uk-active">
-                                    <a href="#">Active</a>
-                                </li>
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Item</a>
-                                </li>
-                                <li class="uk-tab-responsive uk-active">
-                                    <a href="javascript:void(0);">Active</a>
-                                    <div class="uk-dropdown uk-dropdown-small">
-                                        <ul class="uk-nav uk-nav-dropdown">
-                                            <li>
-                                                <a href="javascript:void(0);">Active</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);">Item</a>
-                                            </li>
-                                        </ul>
-                                        <div></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <br />
+                    <!-- breadcrumbs -->
+                    <h3>Breadcrumbs</h3>
+                    <ul class="uk-breadcrumb">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <span>Category</span>
+                        </li>
+                        <li class="uk-active">
+                            <span>Post</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-                    <!-- tabs with dropdowns -->
+            <hr class="uk-article-divider">
+
+            <!-- vertical tabs -->
+            <h2>Tabs</h2>
+            <div class="uk-grid" data-uk-grid-match="">
+                <div class="uk-width-medium-1-2">
+                    <h3>Vertical left tab</h3>
+                    <ul class="uk-tab uk-tab-left" data-uk-tab="">
+                        <li class="uk-active">
+                            <a href="#">Active</a>
+                        </li>
+                        <li>
+                            <a href="#">Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Item</a>
+                        </li>
+                        <li class="uk-tab-responsive uk-active">
+                            <a href="javascript:void(0);">Active</a>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="uk-nav uk-nav-dropdown">
+                                    <li>
+                                        <a href="javascript:void(0);">Active</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Item</a>
+                                    </li>
+                                </ul>
+                                <div></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-medium-1-2">
+                    <h3>Vertical right tab</h3>
+                    <ul class="uk-tab uk-tab-right" data-uk-tab="">
+                        <li class="uk-active">
+                            <a href="#">Active</a>
+                        </li>
+                        <li>
+                            <a href="#">Item</a>
+                        </li>
+                        <li>
+                            <a href="#">Item</a>
+                        </li>
+                        <li class="uk-tab-responsive uk-active">
+                            <a href="javascript:void(0);">Active</a>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="uk-nav uk-nav-dropdown">
+                                    <li>
+                                        <a href="javascript:void(0);">Active</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">Item</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- tabs with dropdowns -->
+            <div class="uk-grid" data-uk-grid-match="">
+                <div class="uk-width-medium-1-1">
+                    <h3>Horizontal tabs with dropdowns</h3>   
                     <ul class="uk-tab uk-width-medium-7-10" data-uk-tab="">
                         <li class="uk-active">
                             <a href="#">Active</a>
@@ -389,27 +420,15 @@
                             </div>
                         </li>
                     </ul>
-                    <br />
+                </div>
+            </div>
 
-                    <!-- breadcrumbs -->
-                    <ul class="uk-breadcrumb">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <span>Category</span>
-                        </li>
-                        <li class="uk-active">
-                            <span>Post</span>
-                        </li>
-                    </ul>
+            <hr class="uk-article-divider">
 
-                    <hr class="uk-article-divider">
-
-                    <!-- pagination -->
+            <!-- pagination -->
+            <h2>Pagination</h2>
+            <div class="uk-grid" data-uk-grid-match="">
+                <div class="uk-width-medium-1-1">
                     <ul class="uk-pagination">
                         <li class="uk-disabled">
                             <span>«</span>
@@ -417,24 +436,12 @@
                         <li class="uk-active">
                             <span>1</span>
                         </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <span>...</span>
-                        </li>
-                        <li>
-                            <a href="#">20</a>
-                        </li>
-                        <li>
-                            <a href="#">»</a>
-                        </li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><span>...</span></li>
+                        <li><a href="#">20</a></li>
+                        <li><a href="#">»</a></li>
                     </ul>
 
                     <div class="uk-grid" data-uk-grid-margin="">
@@ -537,10 +544,11 @@
                             </a>
                         </li>
                     </ul>
+                </div> 
+            </div> 
 
-                </div> <!-- width-1-1 -->
+            <hr class="uk-article-divider">
 
-            </div> <!-- uk-grid -->
-        </div>
+        </div> <!-- container -->
 	</body>
 </html>
