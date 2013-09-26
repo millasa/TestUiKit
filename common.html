@@ -3,12 +3,12 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="css/uikit.gradient.min.css" />
-        <!-- This row is for GitHub-->
+        <!-- This row is for GitHub
             <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-        
-        <!-- This row is for VS 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         -->
+        <!-- This row is for VS -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        
 		<script src="js/uikit.min.js"></script>
         <script>
             $(function () {
@@ -48,6 +48,7 @@
             });
 		</script>
 	</head>
+
 	<body>
         <div class="uk-container uk-container-center">
             <h1 class="uk-text-center">
@@ -72,13 +73,16 @@
                     <li class="uk-active">
                         <a href="#">Common</a>
                     </li>
+                    <li>
+                        <a href="javascript.html">JavaScript</a>
+                    </li>
                 </ul>
             </nav>
             <br />
 
             <div class="uk-grid" data-uk-grid-match="">
                 <div class="uk-width-1-1">
-                    <h2>Button</h2>
+                    <h2 class="uk-text-center">Button</h2>
                     <p>
                         <a class="uk-button" href="#">Link</a>
                         <button class="uk-button" type="button">Button</button>
@@ -205,8 +209,8 @@
                 <div class="uk-width-1-3">
                     <h3>Buttons with dropdown</h3>
                     <div class="uk-margin">
-                        <div class="uk-button-dropdown" data-uk-dropdown="">
-                            <button class="uk-button" type="submit">Hover <i class="uk-icon-caret-down"></i></button>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                            <button class="uk-button" type="submit">Click <i class="uk-icon-caret-down"></i></button>
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav uk-nav-dropdown">
                                     <li><a href="#">Item</a></li>
@@ -220,7 +224,7 @@
                             </div>
                         </div>
                         <div class="uk-button-group">
-                            <button class="uk-button" type="submit">Button</button>
+                            <button class="uk-button" type="submit">Hover</button>
                             <div data-uk-dropdown="">
                                 <a href="#" class="uk-button"><i class="uk-icon-caret-down"></i></a>
                                 <div class="uk-dropdown uk-dropdown-small">
@@ -239,8 +243,8 @@
                     </div>
 
                     <div class="uk-margin">
-                        <div class="uk-button-dropdown" data-uk-dropdown="">
-                            <button class="uk-button uk-button-primary" type="submit">Hover <i class="uk-icon-caret-down"></i></button>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                            <button class="uk-button uk-button-primary" type="submit">Click <i class="uk-icon-caret-down"></i></button>
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav uk-nav-dropdown">
                                     <li><a href="#">Item</a></li>
@@ -254,7 +258,7 @@
                             </div>
                         </div>
                         <div class="uk-button-group">
-                            <button class="uk-button uk-button-primary" type="submit">Button</button>
+                            <button class="uk-button uk-button-primary" type="submit">Hover</button>
                             <div data-uk-dropdown="">
                                 <a href="#" class="uk-button uk-button-primary"><i class="uk-icon-caret-down"></i></a>
                                 <div class="uk-dropdown uk-dropdown-small">
@@ -273,8 +277,8 @@
                     </div>
 
                     <div class="uk-margin">
-                        <div class="uk-button-dropdown" data-uk-dropdown="">
-                            <button class="uk-button uk-button-success" type="submit">Hover <i class="uk-icon-caret-down"></i></button>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                            <button class="uk-button uk-button-success" type="submit">Click <i class="uk-icon-caret-down"></i></button>
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav uk-nav-dropdown">
                                     <li><a href="#">Item</a></li>
@@ -288,7 +292,7 @@
                             </div>
                         </div>
                         <div class="uk-button-group">
-                            <button class="uk-button uk-button-success" type="submit">Button</button>
+                            <button class="uk-button uk-button-success" type="submit">Hover</button>
                             <div data-uk-dropdown="">
                                 <a href="#" class="uk-button uk-button-success"><i class="uk-icon-caret-down"></i></a>
                                 <div class="uk-dropdown uk-dropdown-small">
@@ -307,8 +311,8 @@
                     </div>
 
                     <div class="uk-margin">
-                        <div class="uk-button-dropdown" data-uk-dropdown="">
-                            <button class="uk-button uk-button-danger" type="submit">Hover <i class="uk-icon-caret-down"></i></button>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                            <button class="uk-button uk-button-danger" type="submit">Click <i class="uk-icon-caret-down"></i></button>
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav uk-nav-dropdown">
                                     <li><a href="#">Item</a></li>
@@ -322,7 +326,7 @@
                             </div>
                         </div>
                         <div class="uk-button-group">
-                            <button class="uk-button uk-button-danger" type="submit">Button</button>
+                            <button class="uk-button uk-button-danger" type="submit">Hover</button>
                             <div data-uk-dropdown="">
                                 <a href="#" class="uk-button uk-button-danger"><i class="uk-icon-caret-down"></i></a>
                                 <div class="uk-dropdown uk-dropdown-small">
@@ -341,8 +345,8 @@
                     </div>
 
                     <div class="uk-margin">     
-                        <div class="uk-button-dropdown" data-uk-dropdown="">
-                            <button class="uk-button" disabled type="submit">Hover <i class="uk-icon-caret-down"></i></button>
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                            <button class="uk-button" disabled type="submit">Click <i class="uk-icon-caret-down"></i></button>
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav uk-nav-dropdown">
                                     <li><a href="#">Item</a></li>
@@ -356,7 +360,7 @@
                             </div>
                         </div>
                         <div class="uk-button-group">
-                            <button class="uk-button" disabled type="submit">Button</button>
+                            <button class="uk-button" disabled type="submit">Hover</button>
                             <div data-uk-dropdown="">
                                 <button class="uk-button" disabled><i class="uk-icon-caret-down"></i></button>
                                 <div class="uk-dropdown uk-dropdown-small">
@@ -381,7 +385,7 @@
             <!-- Alerts -->
             <div class="uk-grid" data-uk-grid-match="">
                 <div class="uk-width-1-1">
-                    <h2>Alert</h2>
+                    <h2 class="uk-text-center">Alert</h2>
                     <div class="uk-alert">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
                     <div class="uk-alert uk-alert-success" data-uk-alert="">
                         <a href="#" class="uk-alert-close uk-close"></a>
@@ -408,7 +412,7 @@
             <!-- thumbnails -->
             <div class="uk-grid" data-uk-grid-match="">
                 <div class="uk-width-1-1">
-                    <h2>Thumbnail</h2>
+                    <h2 class="uk-text-center">Thumbnail</h2>
 
                     <div class="uk-margin">
                         <img class="uk-thumbnail" src="http://images1.wikia.nocookie.net/__cb62274/creepypasta/images/thumb/2/2a/Tabby_Kitten.jpg/200px-0,1600,120,920-Tabby_Kitten.jpg" alt="">
@@ -481,7 +485,7 @@
             <hr class="uk-article-divider">
 
             <!-- Overlay -->
-            <h2>Overlay</h2>
+            <h2 class="uk-text-center">Overlay</h2>
             <div class="uk-grid" data-uk-grid-match="">
                 <div class="uk-width-1-2">
                     <h3>Overlay (div and anchor)</h3>
@@ -542,7 +546,7 @@
             <!-- Progress bars -->
             <div class="uk-grid" data-uk-grid-match="">
                 <div class="uk-width-1-1">
-                    <h2>Progress bar</h2>
+                    <h2 class="uk-text-center">Progress bar</h2>
                     <div class="uk-progress">
                         <div class="uk-progress-bar" style="width: 40%;">40%</div>
                     </div>
@@ -577,7 +581,7 @@
             <!-- Animation -->
             <div class="uk-grid" data-uk-grid-match="">
                 <div class="uk-width-1-1">
-                    <h2>Animation</h2>
+                    <h2 class="uk-text-center">Animation</h2>
                     <p>Click on any of the boxes or button to see the animation.</p>
 
                     <p><button class="uk-button" type="button" id="magic-button">Button</button></p>

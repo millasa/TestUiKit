@@ -36,6 +36,9 @@
                     <li>
                         <a href="common.html">Common</a>
                     </li>
+                    <li>
+                        <a href="javascript.html">JavaScript</a>
+                    </li>
                     <li class="uk-parent" data-uk-dropdown="">
                         <a href="#">
                             Just Example 
@@ -175,13 +178,17 @@
                     <!-- Nav off-canvas -->
                     <h3>Navigation Off-Canvas</h3>
                     <div class="uk-margin">
-                        <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-1'}">Off-canvas</button>
+                        <div class="uk-button-group">
+                            <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-left'}">Left</button>
+                            <button class="uk-button" data-uk-offcanvas="{target:'#offcanvas-right'}">Right</button>
+                        </div>
 
-                        <div id="offcanvas-1" class="uk-offcanvas">
+                        <div id="offcanvas-left" class="uk-offcanvas">
                             <div class="uk-offcanvas-bar">
                                 <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="">
                                     <li><a href="#">Item</a></li>
                                     <li class="uk-active"><a href="#">Active</a></li>
+
                                     <li class="uk-parent">
                                         <a href="#">Parent</a>
                                         <ul class="uk-nav-sub">
@@ -194,6 +201,7 @@
                                             </li>
                                         </ul>
                                     </li>
+
                                     <li class="uk-parent">
                                         <a href="#">Parent</a>
                                         <ul class="uk-nav-sub">
@@ -206,7 +214,45 @@
 
                                     <li class="uk-nav-header">Header</li>
                                     <li class="uk-parent"><a href="#"><i class="uk-icon-star"></i>Parent</a></li>
-                                    <li><a href="$"><i class="uk-icon-twitter"></i>Item</a></li>
+                                    <li><a href="#"><i class="uk-icon-twitter"></i>Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#"><i class="uk-icon-rss"></i>Item</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="offcanvas-right" class="uk-offcanvas">
+                            <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+                                <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="">
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-active"><a href="#">Active</a></li>
+
+                                    <li class="uk-parent">
+                                        <a href="#">Parent</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="#">Sub item</a></li>
+                                            <li><a href="#">Sub item</a>
+                                                <ul>
+                                                    <li><a href="#">Sub item</a></li>
+                                                    <li><a href="#">Sub item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="uk-parent">
+                                        <a href="#">Parent</a>
+                                        <ul class="uk-nav-sub">
+                                            <li><a href="#">Sub item</a></li>
+                                            <li><a href="#">Sub item</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#">Item</a></li>
+
+                                    <li class="uk-nav-header">Header</li>
+                                    <li class="uk-parent"><a href="#"><i class="uk-icon-star"></i>Parent</a></li>
+                                    <li><a href="#"><i class="uk-icon-twitter"></i>Item</a></li>
                                     <li class="uk-nav-divider"></li>
                                     <li><a href="#"><i class="uk-icon-rss"></i>Item</a></li>
                                 </ul>
