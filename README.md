@@ -6,3 +6,4 @@ Live preview:
 * [navigation.html](https://rawgithub.com/millasa/TestUiKit/master/navigation.html)
 * [elements.html](https://rawgithub.com/millasa/TestUiKit/master/elements.html)
 * [common.html](https://rawgithub.com/millasa/TestUiKit/master/common.html)
+* [javascript.html](https://rawgithub.com/millasa/TestUiKit/master/javascript.html)
