@@ -3,13 +3,13 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="css/uikit.gradient.min.css" />
-		<!-- This row is for GitHub-->
+		<!-- This row is for GitHub
             <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-        
-        <!-- This row is for VS
+        -->
+        <!-- This row is for VS-->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-         -->
-		<script src="js/uikit.min.js"></script>
+         
+		<script src="js/uikit.js"></script>
 	</head>
 
 	<body>
@@ -109,10 +109,10 @@
                 </div>
 
                 <div class="uk-width-medium-1-2">
-                    <h3>Multiple open lists at a time</h3>
+                    <h3>Multiple open lists at a time (with one opened list by default)</h3>
                     <p><code>data-uk-nav="{multiple:true}"</code></p>
                     <ul class="uk-nav uk-nav-side uk-nav-parent-icon uk-width-medium-2-3" data-uk-nav="{multiple:true}">
-                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Active</a></li>
                         <li><a href="#">Item</a></li>
 
                         <li class="uk-parent">
@@ -128,7 +128,7 @@
                             </ul>
                         </li>
 
-                        <li class="uk-parent">
+                        <li class="uk-parent uk-active">
                             <a href="#">Parent</a>
                             <ul class="uk-nav-sub">
                                 <li><a href="#">Sub item</a></li>
